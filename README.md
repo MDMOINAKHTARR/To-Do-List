@@ -27,7 +27,8 @@ No external libraries or frameworks used.
 
 ## 📸 Screenshots
 
-> _Add your screenshots here if needed._
+![image](https://github.com/user-attachments/assets/9a2cd216-b16c-4cf8-bfb7-7674bbbb0531)
+
 
 ---
 
