@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Tasks - Batman & Superman To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Symbols -->
+    <div class="bat-signal">
+        <svg viewBox="0 0 100 100" fill="currentColor" style="color: #fbbf24;">
+            <path d="M50 10 L30 25 L10 20 L15 35 L5 50 L15 65 L10 80 L30 75 L50 90 L70 75 L90 80 L85 65 L95 50 L85 35 L90 20 L70 25 Z"/>
+        </svg>
+    </div>
+    
+    <div class="superman-logo">
+        <svg viewBox="0 0 100 100" fill="currentColor" style="color: #dc2626;">
+            <path d="M20 30 L50 10 L80 30 L80 70 L50 90 L20 70 Z M35 40 L50 35 L65 40 L65 60 L50 65 L35 60 Z"/>
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>HERO TASKS</h1>
+            <p>Save Gotham & <span class="hero-subtitle">Metropolis</span> One Task at a Time</p>
+        </div>
+
+        <div class="todo-container">
+            <div class="input-section">
+                <input type="text" class="task-input" placeholder="What heroic mission awaits today?" id="taskInput">
+                <button class="add-btn" id="addBtn">⚡ DEPLOY</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number" id="totalTasks">0</span>
+                    <span class="stat-label">Total Missions</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="activeTasks">0</span>
+                    <span class="stat-label">Active Threats</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="completedTasks">0</span>
+                    <span class="stat-label">Villains Defeated</span>
+                </div>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">🦇 ALL MISSIONS</button>
+                <button class="filter-btn" data-filter="active">⚡ ACTIVE</button>
+                <button class="filter-btn" data-filter="completed">🛡️ COMPLETED</button>
+            </div>
+
+            <div class="tasks-list" id="tasksList">
+                <div class="empty-state">
+                    <div class="hero-icon">🦸</div>
+                    <h3>READY FOR ACTION</h3>
+                    <p>The city needs you, hero. Deploy your first mission!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>       
