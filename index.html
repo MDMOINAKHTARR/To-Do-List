@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Tasks - Batman & Superman To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Symbols -->
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 700px; margin: 0 auto 32px auto;">
+        <div class="bat-signal" style="background: #fff; padding: 28px; border-radius: 24px; box-shadow: 0 8px 40px 0 #fbbf24, 0 8px 32px #fbbf24; display: inline-block; border: 7px solid #f59e00;">
+            <img src="09d0fe751752cc1bd7efcc3cdb2b159e.jpg" alt="Bat-Signal" style="width: 150px; height: auto; display: block; filter: drop-shadow(0 0 16px #fbbf24);">
+        </div>
+        <div class="superman-logo" style="background: #fff; padding: 28px; border-radius: 24px; box-shadow: 0 8px 40px 0 #dc2626, 0 8px 32px #dc2626; display: inline-block; border: 7px solid #b91c1c;">
+            <img src="di7s9sb-fd21c3d4-1a7c-4520-9583-66c7ed77971f.png" alt="Superman Logo" style="width: 150px; height: auto; display: block; filter: drop-shadow(0 0 16px #dc2626);">
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="header">
+            <h1>HERO TASKS</h1>
+            <p>Save Gotham & <span class="hero-subtitle">Metropolis</span> One Task at a Time</p>
+        </div>
+
+        <div class="todo-container">
+            <div class="input-section">
+                <input type="text" class="task-input" placeholder="What heroic mission awaits today?" id="taskInput">
+                <button class="add-btn" id="addBtn">⚡ DEPLOY</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number" id="totalTasks">0</span>
+                    <span class="stat-label">Total Missions</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="activeTasks">0</span>
+                    <span class="stat-label">Active Threats</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="completedTasks">0</span>
+                    <span class="stat-label">Villains Defeated</span>
+                </div>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">🦇 ALL MISSIONS</button>
+                <button class="filter-btn" data-filter="active">⚡ ACTIVE</button>
+                <button class="filter-btn" data-filter="completed">🛡️ COMPLETED</button>
+            </div>
+
+            <div class="tasks-list" id="tasksList">
+                <div class="empty-state">
+                    <div class="hero-icon">🦸</div>
+                    <h3>READY FOR ACTION</h3>
+                    <p>The city needs you, hero. Deploy your first mission!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>       
